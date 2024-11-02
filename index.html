@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url("bckground 1.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+            overflow-x: hidden;
+            overflow-y: visible;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        header {
+            background-color: #6a6463;
+            color: #fff;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #7e7978;
+            width: 100%;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            color: #bdb8b6;
+        }
+        nav a:focus {
+            color: #bdb8b6;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .album img {
+            width: 100%;
+            height: auto;
+            max-width: 150px;
+            margin: 10px;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .album img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #6a6463;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+        }
+        .e-certificate {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 100px;
+            grid-row-gap: 10px;
+        }
+        .e-certificate embed {
+            width: 200px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            right: 50px;
+            margin-top: 50px;
+        }
+        embed:hover {
+            transform: scale(1.05);
+            transition: all .5s ease-in-out;
+        }
+        embed{
+            margin-right: -20px;
+        }
+        .photo {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 70px;
+            grid-row-gap: 10px;
+        }
+        .photo img {
+            width: 800px;
+            left: -70px;
+            position: relative;
+        }
+        .home-container {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: -175px;
+            width: 1100px;
+        }
+        .home-text {
+            max-width: 60%;
+            text-align: right;
+        }
+        .home-image {
+            max-width: 60%;
+        }
+        .home-image img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header><b>My Portfolio</b></header>
+<nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('achieve')">Achieve</a>
+    <a href="#" onclick="showSection('masterpiece')">Masterpiece</a>
+    <a href="#" onclick="showSection('album')">Album</a>
+    <a href="#" onclick="showSection('about')">About</a>
+</nav>
+<div id="home" class="content">
+    <h1><b>Welcome to My Portfolio</b></h1>
+    <br>
+    <br>
+    <marquee direction="left">Halo Pengunjung, selamat datang di Portofolio Saya! Ini adalah ruang di mana saya membagikan karya dan pengalaman saya. Terima kasih telah berkunjung!</marquee>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="home-container">
+        <div class="home-text">
+            <h1>Selamat datang di portofolio saya</h1>
+            <br>
+            <p>Selamat datang di halaman utama portofolio saya! Saya sangat senang Anda mengunjungi ruang ini. Di sini, Anda akan menemukan berbagai karya dan proyek yang mencerminkan perjalanan profesional dan kreativitas saya. Setiap bagian dari portofolio ini dirancang untuk memberikan wawasan tentang keahlian dan pengalaman saya. Saya berharap Anda menikmati menjelajahi karya-karya ini dan menemukan inspirasi yang bermanfaat. Terima kasih telah meluangkan waktu untuk berkunjung!</p>
+        </div>
+        <div class="home-image">
+            <img src="photo 1.png" alt="Landing Page Image">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="home-container">
+        <div class="home-text">
+            <h1>Sorotan Perjalanan Saya</h1>
+            <br>
+            <p>Sorotan perjalanan saya selama kuliah mencakup pengalaman berharga dan pencapaian yang telah membentuk diri saya sebagai individu dan profesional. Dari proyek-proyek akademik yang menantang hingga keterlibatan dalam kegiatan di kampus, setiap langkah dalam perjalanan ini memberikan pelajaran berharga dan memperluas keahlian saya. Saya sangat antusias untuk terus belajar dan berkembang di dunia ini, serta berkontribusi lebih banyak di masa depan.</p>
+        </div>
+        <div class="home-image">
+            <img src="photo 2.jpg" alt="Landing Page Image">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="home-container">
+        <div class="home-text">
+            <h1>Sebuah Perjalanan Melalui Kenanganku</h1>
+            <br>
+            <p>Album Kenangan saya nanti akan menampilkan momen-momen berharga selama perjalanan saya, termasuk masa-masa penuh semangat sebagai mahasiswa. Setiap foto bukan sekadar gambar, tetapi sebuah cerita yang mengandung emosi, tawa, dan makna tersendiri. Koleksi ini memuat berbagai pencapaian akademis yang membanggakan, petualangan baru yang memberi pengalaman berharga, serta momen hangat bersama keluarga dan teman-teman yang mendukung perjalanan saya. Dari capaian di kampus hingga pengalaman kreatif yang memacu semangat, setiap kenangan ini mencerminkan perjalanan saya dalam mencari ilmu dan makna hidup. Saya berharap, saat Anda menjelajahi album ini, Anda bisa merasakan semangat yang sama dan mungkin terinspirasi untuk merenungi kisah perjalanan Anda sendiri. Mari kita rayakan bersama setiap langkah yang membuat hidup begitu berharga.</p>
+        </div>
+        <div class="home-image">
+            <img src="photo 3.jpg" alt="Landing Page Image">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="home-container">
+        <div class="home-text">
+            <h1>Pendidikan</h1>
+            <br>
+            <p>Tahun 2023, saya memulai perjalanan akademis di Universitas Negeri Surabaya dengan memilih Program Studi S1 Sistem Informasi. Melalui program ini, saya mendalami dasar-dasar teknologi informasi, pemrograman, dan analisis sistem, yang menjadi fondasi kuat dalam memahami bagaimana sistem informasi dapat digunakan untuk memecahkan masalah nyata. Selama masa perkuliahan, saya berkesempatan mempelajari berbagai mata kuliah penting seperti : Analisis dan Desain Sistem, Basis Data, atau Pengembangan Aplikasi Web, yang telah mengasah keterampilan teknis dan logika pemrograman saya.</p>
+        </div>
+        <div class="home-image">
+            <img src="photo 4.jpg" alt="Landing Page Image">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<div id="achieve" class="content hidden">
+    <h1><b>Penghargaan</b></h1>
+    <div class="e-certificate">
+        <embed src="Sertif 1.pdf" type="application/pdf">
+        <embed src="sertif 6.pdf" type="application/pdf">
+        <embed src="sertif 7.pdf" type="application/pdf">
+        <embed src="Sertif 2.pdf" type="application/pdf">
+        <embed src="sertif 3.pdf" type="application/pdf">
+        <embed src="sertif 4.pdf" type="application/pdf">
+<br>
+<br>
+
+    </div>
+</div>
+<div id="masterpiece" class="content hidden album">
+    <h1><b>Mahakarya</b></h1>
+    <br>
+    <br>
+    <!-- ukuran fotonya 1:1 -->
+    <div class="photo">
+        <img src="karya 1.png" alt="Album Image 1" width="250px" height="250px">
+        <img src="karya 6.jpg" alt="Album Image 2" width="250px" height="250px">
+        <img src="karya 3.png" alt="Album Image 3" width="250px" height="250px">
+        <img src="karya 4.jpg" alt="Album Image 4" width="250px" height="250px">
+        <img src="karya 5.png" alt="Album Image 5" width="250px" height="250px">
+        <img src="karya 2.jpg" alt="Album Image 6" width="250px" height="250px">
+        <img src="karya 7.png" alt="Album Image 7" width="250px" height="250px">
+        <img src="karya 8.jpeg" alt="Album Image 8" width="250px" height="250px">
+        <img src="karya 9.jpg" alt="Album Image 9" width="250px" height="250px">
+        <img src="karya10.jpg" alt="Album Image 10" width="250px" height="250px">
+        <img src="karya11.jpg" alt="Album Image 11" width="250px" height="250px">
+        <img src="karya12.jpg" alt="Album Image 12" width="250px" height="250px">
+    </div>
+</div>
+<div id="album" class="content hidden album">
+    <h1><b>Foto Album</b></h1>
+    <br>
+    <br>
+    <!-- ukuran fotonya 1:1 -->
+    <div class="photo">
+        <img src="foto 1.jpg" alt="Album Image 1" width="250px" height="250px">
+        <img src="foto 2.jpg" alt="Album Image 2" width="250px" height="250px">
+        <img src="foto 3.JPG" alt="Album Image 3" width="250px" height="250px">
+        <img src="foto 4.jpg" alt="Album Image 4" width="250px" height="250px">
+        <img src="foto 5.jpg" alt="Album Image 5" width="250px" height="250px">
+        <img src="foto 6.jpg" alt="Album Image 6" width="250px" height="250px">
+        <img src="foto 7.JPG" alt="Album Image 7" width="250px" height="250px">
+        <img src="foto 8.jpg" alt="Album Image 8" width="250px" height="250px">
+        <img src="foto 9.jpg" alt="Album Image 9" width="250px" height="250px">
+        <img src="foto 10.jpg" alt="Album Image 5" width="250px" height="250px">
+        <img src="foto 11.jpg" alt="Album Image 6" width="250px" height="250px">
+        <img src="foto 12.JPG" alt="Album Image 7" width="250px" height="250px">
+        <img src="foto 13.jpg" alt="Album Image 8" width="250px" height="250px">
+        <img src="foto 14.jpg" alt="Album Image 9" width="250px" height="250px">
+        <img src="foto 15.jpg" alt="Album Image 9" width="250px" height="250px">
+        <img src="foto 16.jpg" alt="Album Image 9" width="250px" height="250px">
+    </div>
+    <br>
+    <br>
+    </div>
+<div id="about" class="content hidden">
+    <h1><b>Tentang saya</b></h1>
+    <br>
+    <br>
+    <p>Halo, nama saya Novita Dwi Putriani biasa dipanggil Novita dari prodi S1 Sistem Informasi, Jurusan Teknik Informatika, Fakultas Teknik, seorang mahasiswa S1 Sistem Informasi di Universitas Negeri Surabaya yang antusias dalam mengembangkan diri dan membuat dampak positif melalui teknologi dan kreativitas.<p>
+<br> 
+    <p>Melalui studi saya, saya telah membangun pemahaman yang kuat di bidang sistem informasi dan keterampilan teknis lainnya, memungkinkan saya untuk menemukan solusi inovatif dalam berbagai proyek. Selama perjalanan akademik ini, saya berkesempatan mengembangkan keterampilan dalam keterampilan spesifik seperti pemrograman, manajemen proyek, atau analisis data serta terlibat dalam berbagai pengalaman belajar, baik dari tugas kuliah hingga proyek kelompok yang menantang.<p>
+<br>
+    <p>Saya tidak hanya termotivasi oleh keinginan untuk mencapai keberhasilan pribadi tetapi juga berkomitmen untuk berkontribusi dalam pengembangan teknologi yang bermanfaat bagi masyarakat luas. Di luar aktivitas akademik, saya juga aktif [sebutkan minat atau hobi seperti menari, mendengarkan musik, seni, mendesain atau lainnya, yang memperkaya pengalaman saya dan memperkuat kreativitas saya. Saya harap portofolio ini dapat menjadi jendela untuk melihat perjalanan saya, dan semoga dapat terhubung dengan Anda yang memiliki minat yang sama. Terima kasih telah meluangkan waktu untuk mengenal lebih jauh tentang saya!.</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+<footer>&copy; 2024 Portfolio - Novita Dwi Putriani</footer>
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.content');
+        sections.forEach(section => {
+        section.classList.add('hidden');
+        });
+        document.getElementById(sectionId).classList.remove('hidden');
+    }
+</script>
+</body>
+</html>
